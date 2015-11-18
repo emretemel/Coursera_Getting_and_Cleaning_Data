@@ -46,4 +46,4 @@ viii) Finally we create a tidy data set with the average of each variable for ea
   * 69 columns => subjects(subject_id) , activities(act_id and act_name) and 66 measure columns
   * 180 rows   => There are 30 subjects and  6 different activities : 180 combinations
 
-ix) Write tidy_dataset to "tidy_dataset.txt" file in current working directory  
+ix) Extract the tidy_dataset to "tidy_dataset.txt" file in current working directory  
