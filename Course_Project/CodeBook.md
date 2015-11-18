@@ -30,6 +30,7 @@ v) Merges the training and the test sets to create one data set.
 vi) Appropriately labels the data set with descriptive measure and activity names.
  * Merging activity and activity_labels to activity_set with converting activity names to lower case
  * We remove "()" and "-" from mean_std_cols and replace "mean" and "std" as "Mean" and "Std"  
+ 
 vii) We merge subjects,measures and activity data
   * activity_set,subjects and dataset be merged and measure columns are replace with the names at mean_std_cols
   * fdataset is the final data.table for merged data
