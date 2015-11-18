@@ -3,7 +3,7 @@
 
 ######Emre Temel / 18 Nov 2015
 
-#####How to run script (run_analysis.R)?
+#####How to run run_analysis.R?
 
 * Download data from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip  
 * Unzip and rename the folder  "SamsungData".
