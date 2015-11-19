@@ -1,4 +1,8 @@
+# check data.table package
+if ( "data.table" %in% rownames(installed.packages()) == FALSE) {install.packages("data.table")}
+
 library(data.table)
+
 #read all files and extract them to data.table
 set_test <- fread("SamsungData/test/X_test.txt", header = FALSE )  # read test set
 set_train <- fread("SamsungData/train/X_train.txt", header = FALSE ) # read train set
