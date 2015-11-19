@@ -14,7 +14,6 @@ subject_train <- fread("SamsungData/train/subject_train.txt", header = FALSE ) #
 #read all 561 features
 features <-  fread("SamsungData/features.txt", header = FALSE ) 
 
-
 # 1.Merges the training and the test sets to create one data set.
 # 2. Extracts only the measurements on the mean and standard deviation for each measurement.  
 mean_std_cols <- features[(V2 %like% c("mean\\(\\)") | V2 %like% c("std\\(\\)"))] # finding mean & std measurements
@@ -26,8 +25,6 @@ activity[, recid := activity[,.I]]    # set record_id
 subjects <- rbind(subject_test,subject_train) 
 subjects[, recid := subjects[,.I]]    # set record_id
 setkey(subjects,recid) # set record_id as a key
-
-
 
 # 3.Uses descriptive activity names to name the activities in the data set
 setkey(activity,V1)
